@@ -5,6 +5,4 @@ def test_home():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    # assert b"API Fase 1 funcionando! - actualizado" in response.data
-    assert b'API Fase 2 corregida y segura' in respuesta.data
-
+    assert b"API Fase 2 corregida y segura" in response.data
